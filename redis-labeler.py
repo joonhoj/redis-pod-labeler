@@ -81,7 +81,7 @@ def find_redis_and_label(v1):
     pod_details = get_redis_pods_with_roles(v1, master_ip)
     for pod_data in pod_details:
         logging.debug(f"POD:  {pod_data[0]}, {pod_data[1]}")
-        label_redis_pods(v1, pod_data[1], generate_pod_label_body(pod_data[0], args.domain))
+        #label_redis_pods(v1, pod_data[1], generate_pod_label_body(pod_data[0], args.domain))
 
 
 # MAIN
